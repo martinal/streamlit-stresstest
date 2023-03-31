@@ -1,0 +1,8 @@
+import sys
+print("Top of mylib", sys.modules.get("mylib") is not None)
+import streamlit as st
+st.write("Loading mylib", sys.modules.get("mylib") is not None)
+print("Bottom of mylib", sys.modules.get("mylib") is not None)
+
+def f():
+    return -1
